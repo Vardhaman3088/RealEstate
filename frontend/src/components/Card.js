@@ -10,7 +10,7 @@ const card = (props) => {
     <div className="card">
       <h3 className="card_title">{props.title}</h3>
       <div className="card_header">
-        <img className="card_header_photo" src={props.photo_main} alt="House" />
+        <img className="card_header_photo" src={`http://localhost:8000${props.photo_main}`} alt="House" />
       </div>
       <p className="card_location">{props.address},{props.city},{props.state}</p>
       <div className="row">
